@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/buton_color"
+    android:orientation="vertical"
+    tools:context=".Ozet">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChart"
+            android:layout_width="match_parent"
+            android:layout_height="237dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="101dp"
+
+            android:padding="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-100dp"
+            android:padding="20dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#FDE938"
+                app:cardElevation="10dp"
+
+
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FF8000"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:id="@+id/payment_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:includeFontPadding="false"
+                        android:text="Gelir"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txtTopGelir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/payment_label"
+                        android:layout_centerHorizontal="true"
+                        android:includeFontPadding="false"
+                        android:text="Balance"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        tools:text="0" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#FFFDE938"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FF8000"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:id="@+id/booking_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:includeFontPadding="false"
+                        android:text="Gider"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txtTopGider"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/booking_label"
+                        android:layout_centerHorizontal="true"
+                        android:includeFontPadding="false"
+                        android:text="Booking"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        tools:text="0" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/btn_tüm"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="#FF8000"
+                    android:text="Tüm" />
+
+                <Button
+                    android:id="@+id/btn_gelir"
+
+                    style="@style/Widget.MaterialComponents.Button.Icon"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="#FF8000"
+                    android:isScrollContainer="false"
+                    android:text="Gelir" />
+
+                <Button
+                    android:id="@+id/btn_gider"
+
+                    style="@style/Widget.MaterialComponents.Button.Icon"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="#FF8000"
+                    android:isScrollContainer="false"
+                    android:text="Gider" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_veri1"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="99dp"
+
+                android:isScrollContainer="false"
+                android:text="Button"
+                app:icon="@android:drawable/btn_star"
+
+                app:iconPadding="2dp"
+                app:iconTintMode="multiply" />
+
+            <Button
+                android:id="@+id/btn_veri2"
+                android:layout_width="match_parent"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                app:icon="@android:drawable/btn_star"
+
+                android:layout_height="99dp"
+                android:isScrollContainer="false"
+                android:text="Button"
+
+                app:iconPadding="2dp"
+                app:iconTintMode="multiply" />   <Button
+            android:id="@+id/btn_veri3"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            app:icon="@android:drawable/btn_star"
+
+            android:layout_height="99dp"
+            android:isScrollContainer="false"
+            android:text="Button"
+
+            app:iconPadding="2dp"
+            app:iconTintMode="multiply" />   <Button
+            android:id="@+id/btn_veri4"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            app:icon="@android:drawable/btn_star"
+
+            android:layout_height="99dp"
+            android:isScrollContainer="false"
+            android:text="Button"
+
+            app:iconPadding="2dp"
+            app:iconTintMode="multiply" />   <Button
+            android:id="@+id/btn_veri5"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            app:icon="@android:drawable/btn_star"
+
+            android:layout_height="99dp"
+            android:isScrollContainer="false"
+            android:text="Button"
+
+            app:iconPadding="2dp"
+            app:iconTintMode="multiply" />   <Button
+            android:id="@+id/btn_veri6"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            app:icon="@android:drawable/btn_star"
+
+            android:layout_height="99dp"
+            android:isScrollContainer="false"
+            android:text="Button"
+
+            app:iconPadding="2dp"
+            app:iconTintMode="multiply" />   <Button
+            android:id="@+id/btn_veri7"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            app:icon="@android:drawable/btn_star"
+
+            android:layout_height="99dp"
+            android:isScrollContainer="false"
+            android:text="Button"
+
+            app:iconPadding="2dp"
+            app:iconTintMode="multiply" />
+
+
+            <Button
+                android:id="@+id/btnNakit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

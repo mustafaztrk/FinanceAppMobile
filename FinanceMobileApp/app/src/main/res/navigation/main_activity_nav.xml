@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/home">
+
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.FinanceMobileApp.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/ozet"
+        android:name="com.example.FinanceMobileApp.Ozet"
+        android:label="fragment_ozet"
+        tools:layout="@layout/fragment_ozet"/>
+
+    <fragment
+        android:id="@+id/hesapMakinesi"
+        android:name="com.example.FinanceMobileApp.HesapMakinesi"
+        android:label="fragment_hesap_makinesi"
+        tools:layout="@layout/fragment_hesap_makinesi" />
+</navigation>
